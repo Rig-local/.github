@@ -54,7 +54,14 @@ Two release tracks, independent of each other:
 | **Mac** | Sparkle-signed DMG. Check for Updates in the app. |
 | **Cloud** | `api.userig.app` and the site. Version on `/changelog` and `/health`. |
 
-Download: [userig.app/download](https://userig.app/download)
+**Download the Mac app**
+
+| Chip | Installer |
+|------|-----------|
+| Apple Silicon (M1–M4) | [Rig-1.0.0-beta.71-arm64.dmg](https://github.com/Rig-local/rig/releases/download/v1.0.0-beta.71/Rig-1.0.0-beta.71-arm64.dmg) |
+| Intel | [Rig-1.0.0-beta.71-x64.dmg](https://github.com/Rig-local/rig/releases/download/v1.0.0-beta.71/Rig-1.0.0-beta.71-x64.dmg) |
+
+Latest GitHub release: [Rig-local/rig/releases/latest](https://github.com/Rig-local/rig/releases/latest) · website: [userig.app/download](https://userig.app/download)
 
 ---
 
