@@ -18,7 +18,7 @@ A Mac app that runs your projects — ports, env, git, databases, logs — and a
   <a href="mailto:help@tickets.userig.app">help@tickets.userig.app</a>
 </p>
 
-Public beta. Built by [Rich Harrington Ltd](https://userig.app). Source of the product lives in [`richharrington20/rig`](https://github.com/richharrington20/rig) on the `beta` branch.
+Public beta. Built by [Rich Harrington Ltd](https://userig.app). Source of the product lives in [`Rig-local/rig`](https://github.com/Rig-local/rig) on the `beta` branch.
 
 ---
 
@@ -32,7 +32,7 @@ Rig is made by **Rich Harrington Ltd** — a small UK company. There is no big t
 | Technical support | [help@tickets.userig.app](mailto:help@tickets.userig.app) |
 | Everything else | [hello@userig.app](mailto:hello@userig.app) — press, partnerships, privacy |
 | GitHub org | [Rig-local](https://github.com/Rig-local) |
-| Product repo | [richharrington20/rig](https://github.com/richharrington20/rig) |
+| Product repo | [Rig-local/rig](https://github.com/Rig-local/rig) |
 | Legal | Rich Harrington Ltd |
 
 We would rather a quiet Mac app that actually boots your stack than another dashboard that pretends to.
@@ -115,7 +115,7 @@ We send transactional mail ourselves ([mail.userig.app](https://mail.userig.app)
 
 ### Control Room
 
-Staff panel at [control.userig.app](https://control.userig.app). People, money, comms, product, system — tickets, flags, email templates, forum moderation. Not a customer product. Sign-in is Rig [SSO](https://github.com/richharrington20/rig/wiki/SSO) with 2FA required.
+Staff panel at [control.userig.app](https://control.userig.app). People, money, comms, product, system — tickets, flags, email templates, forum moderation. Not a customer product. Sign-in is Rig [SSO](https://github.com/Rig-local/rig/wiki/SSO) with 2FA required.
 
 ---
 
@@ -130,7 +130,7 @@ Staff panel at [control.userig.app](https://control.userig.app). People, money, 
 | [status.userig.app](https://status.userig.app) | Public status |
 | [acp.userig.app](https://acp.userig.app) | Cloud ACP |
 
-One Rig account. Community and helpdesk agents use **Continue with Rig**. Contributor map: [wiki — Surfaces](https://github.com/richharrington20/rig/wiki/Surfaces) · [SSO](https://github.com/richharrington20/rig/wiki/SSO) · [API](https://github.com/richharrington20/rig/wiki/API)
+One Rig account. Community and helpdesk agents use **Continue with Rig**. Contributor map: [wiki — Surfaces](https://github.com/Rig-local/rig/wiki/Surfaces) · [SSO](https://github.com/Rig-local/rig/wiki/SSO) · [API](https://github.com/Rig-local/rig/wiki/API)
 
 ---
 
@@ -156,7 +156,7 @@ That mailbox is technical support. Press, partnerships, and privacy stay at [hel
 1. Check [status](https://status.userig.app) and search [docs](https://userig.app/docs) / [Bugs on the forum](https://community.userig.app).
 2. **Preferred:** open a topic on the forum **Bugs** board (sign in with Rig). That is what we triage.
 3. **Email:** [help@tickets.userig.app](mailto:help@tickets.userig.app) — same inbox as the support form.
-4. **Also fine:** a GitHub issue on [`richharrington20/rig`](https://github.com/richharrington20/rig/issues).
+4. **Also fine:** a GitHub issue on [`Rig-local/rig`](https://github.com/Rig-local/rig/issues).
 
 A useful report has:
 
@@ -166,7 +166,7 @@ A useful report has:
 - Whether MCP / Mesh / Continuity / Live Link was in play
 - Redacted logs or a diagnostics bundle — not a screenshot of a black window
 
-Security findings: see [SECURITY.md](https://github.com/richharrington20/rig/blob/beta/docs/SECURITY.md) in the product repo, or email [hello@userig.app](mailto:hello@userig.app). Please do not file a public issue for an unreleased RCE.
+Security findings: see [SECURITY.md](https://github.com/Rig-local/rig/blob/beta/docs/SECURITY.md) in the product repo, or email [hello@userig.app](mailto:hello@userig.app). Please do not file a public issue for an unreleased RCE.
 
 Feature ideas: forum **ideas**, not a bug ticket.
 
@@ -176,10 +176,10 @@ Feature ideas: forum **ideas**, not a bug ticket.
 
 The monorepo is public. Default branch is **`beta`**.
 
-- [Handover](https://github.com/richharrington20/rig/wiki/Handover) — start here
-- [Architecture](https://github.com/richharrington20/rig/wiki/Architecture)
-- [Local setup](https://github.com/richharrington20/rig/wiki/Local-Setup)
-- Full wiki: [github.com/richharrington20/rig/wiki](https://github.com/richharrington20/rig/wiki)
+- [Handover](https://github.com/Rig-local/rig/wiki/Handover) — start here
+- [Architecture](https://github.com/Rig-local/rig/wiki/Architecture)
+- [Local setup](https://github.com/Rig-local/rig/wiki/Local-Setup)
+- Full wiki: [github.com/Rig-local/rig/wiki](https://github.com/Rig-local/rig/wiki)
 
 UK English in anything a human sees. Do not rename Control Room to “admin”. Do not put vendor mesh names in product copy.
 
@@ -188,7 +188,7 @@ UK English in anything a human sees. Do not rename Control Room to “admin”. 
 ## Changelog and releases
 
 - Product changelog: [userig.app/changelog](https://userig.app/changelog)
-- Mac GitHub Releases: [richharrington20/rig/releases](https://github.com/richharrington20/rig/releases)
+- Mac GitHub Releases: [Rig-local/rig/releases](https://github.com/Rig-local/rig/releases)
 - Forum **What’s shipping** / **What’s up next** track the live `releases.json`
 
 ---
