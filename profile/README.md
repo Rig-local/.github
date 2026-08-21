@@ -14,6 +14,8 @@ A Mac app that runs your projects — ports, env, git, databases, logs — and a
   <a href="https://community.userig.app">Community</a>
   ·
   <a href="https://status.userig.app">Status</a>
+  ·
+  <a href="mailto:help@tickets.userig.app">help@tickets.userig.app</a>
 </p>
 
 Public beta. Built by [Rich Harrington Ltd](https://userig.app). Source of the product lives in [`richharrington20/rig`](https://github.com/richharrington20/rig) on the `beta` branch.
@@ -27,7 +29,8 @@ Rig is made by **Rich Harrington Ltd** — a small UK company. There is no big t
 | | |
 |---|---|
 | Site | [userig.app](https://userig.app) |
-| Email | [hello@userig.app](mailto:hello@userig.app) |
+| Technical support | [help@tickets.userig.app](mailto:help@tickets.userig.app) |
+| Everything else | [hello@userig.app](mailto:hello@userig.app) — press, partnerships, privacy |
 | GitHub org | [Rig-local](https://github.com/Rig-local) |
 | Product repo | [richharrington20/rig](https://github.com/richharrington20/rig) |
 | Legal | Rich Harrington Ltd |
@@ -141,10 +144,10 @@ Work top to bottom. You will get a faster answer.
    If Cloud or mail is down, we already know.
 3. **Community** — [community.userig.app](https://community.userig.app)  
    What’s shipping, ideas, and peer help. Sign in with Rig.
-4. **A ticket** — [Support form](https://api.userig.app/support?source=github) or **Help** in the Mac app / account dashboard.  
+4. **A ticket** — email **[help@tickets.userig.app](mailto:help@tickets.userig.app)**, or use the [Support form](https://api.userig.app/support?source=github) / **Help** in the Mac app and account dashboard.  
    Include: Mac version (`Rig → About`), Cloud version if relevant, what you did, what you expected, logs or a diagnostics bundle ([how](https://userig.app/docs/diagnostics-bundle)).
 
-Email [hello@userig.app](mailto:hello@userig.app) if the form is the wrong shape. There is no separate enterprise hotline.
+That mailbox is technical support. Press, partnerships, and privacy stay at [hello@userig.app](mailto:hello@userig.app). There is no separate enterprise hotline.
 
 ---
 
@@ -152,7 +155,8 @@ Email [hello@userig.app](mailto:hello@userig.app) if the form is the wrong shape
 
 1. Check [status](https://status.userig.app) and search [docs](https://userig.app/docs) / [Bugs on the forum](https://community.userig.app).
 2. **Preferred:** open a topic on the forum **Bugs** board (sign in with Rig). That is what we triage.
-3. **Also fine:** a GitHub issue on [`richharrington20/rig`](https://github.com/richharrington20/rig/issues).
+3. **Email:** [help@tickets.userig.app](mailto:help@tickets.userig.app) — same inbox as the support form.
+4. **Also fine:** a GitHub issue on [`richharrington20/rig`](https://github.com/richharrington20/rig/issues).
 
 A useful report has:
 
