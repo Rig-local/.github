@@ -4,7 +4,7 @@ One app runs your local projects. Processes, ports, logs, env, and databases sta
 
 It is on **Mac** and **Windows**. **UseRig** on iPhone is the companion for machines you have paired. Optional Cloud is for the fleet — another machine, a team, Mesh, a Live Link — not a remote IDE.
 
-Coding agents (Cursor, Claude, and others) talk to Rig through MCP on that machine. You set what they can see and do.
+Coding agents talk to Rig through MCP. The public one is [api.userig.app/mcp](https://api.userig.app/mcp). The full hub stays on the machine when the app is open. You set what they can see and do.
 
 Made in England. The company is **RigLabs Corp**.
 
@@ -53,6 +53,24 @@ Local use is free in beta. Mesh is the paid line. Plans are on [userig.app/prici
 
 ---
 
+## Public MCP
+
+One plugin for the agents. Repo: [Rig-local/rig-plugin](https://github.com/Rig-local/rig-plugin). Endpoint: `https://api.userig.app/mcp`. The agent signs in in the browser. Docs: [userig.app/docs/mcp](https://userig.app/docs/mcp).
+
+| Agent | Plugin |
+|---|---|
+| Claude | [Claude plugin](https://github.com/Rig-local/rig-plugin/tree/main/.claude-plugin) |
+| ChatGPT and Codex | [Codex plugin](https://github.com/Rig-local/rig-plugin/tree/main/.codex-plugin) |
+| Cursor | [Cursor plugin](https://github.com/Rig-local/rig-plugin/tree/main/.cursor-plugin) |
+| Gemini | [Gemini extension](https://github.com/Rig-local/rig-plugin/blob/main/gemini-extension.json) |
+| Copilot | Same MCP URL in VS Code |
+| Grok | [Grok plugin](https://github.com/Rig-local/rig-plugin/tree/main/.grok-plugin) |
+
+Cloud MCP can list projects, read health and ports, and start, stop, or restart after you confirm. Live logs and the rest of the hub need the app open and linked on that machine.
+
+
+---
+
 ## Help
 
 1. [Docs](https://userig.app/docs) — start at [How to get help](https://userig.app/docs/get-help).
@@ -62,4 +80,3 @@ Local use is free in beta. Mesh is the paid line. Plans are on [userig.app/prici
 
 Include the app version, Mac or Windows, what you did, and what you expected. Security findings go to [hello@userig.app](mailto:hello@userig.app).
 
-Public plugin for coding agents: [Rig-local/rig-plugin](https://github.com/Rig-local/rig-plugin)
