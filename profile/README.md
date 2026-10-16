@@ -1,7 +1,5 @@
 # Rig
 
-**Rig — local runtime context engine for AI coding agents.**
-
 One app runs your local projects. Processes, ports, logs, env, and databases stay on the machine. Your source code stays there too.
 
 It is on **Mac** and **Windows**. **UseRig** on iPhone is the companion for machines you have paired. Optional Cloud is for the fleet — another machine, a team, Mesh, a Live Link — not a remote IDE.
