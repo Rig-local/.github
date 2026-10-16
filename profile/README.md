@@ -2,7 +2,9 @@
 
 **Rig is the local runtime context engine for AI coding agents.**
 
-A Mac app that runs your projects — ports, env, git, databases, logs — and a Cloud layer for the fleet. Agents talk to Rig through MCP on the machine. You stay in charge of what is running.
+A desktop app that runs your projects — ports, env, git, databases, logs — and an optional Cloud layer for the fleet. Agents talk to Rig through MCP on the machine. You stay in charge of what is running.
+
+Made in England. Shipped by [RigLabs Corp](https://userig.app).
 
 <p>
   <a href="https://userig.app"><strong>userig.app</strong></a>
@@ -18,70 +20,71 @@ A Mac app that runs your projects — ports, env, git, databases, logs — and a
   <a href="mailto:help@tickets.userig.app">help@tickets.userig.app</a>
 </p>
 
-Public beta. Built by [Rich Harrington Ltd](https://userig.app). Source of the product lives in [`Rig-local/rig`](https://github.com/Rig-local/rig) on the `beta` branch.
-
 ---
 
 ## About the company
 
-Rig is made by **Rich Harrington Ltd** — a small UK company. There is no big team behind the curtain. Support, shipping, and the forum are the same people who write the product.
+Rig is **made in England**. The company is **RigLabs Corp**.
+
+Support, shipping, and the forum are the same people who write the product. There is no big team behind the curtain.
 
 | | |
 |---|---|
 | Site | [userig.app](https://userig.app) |
+| Company | RigLabs Corp |
+| Address | 1007 N Orange St. 4th Floor Suite #6227, Wilmington, Delaware 19801, United States |
 | Technical support | [help@tickets.userig.app](mailto:help@tickets.userig.app) |
 | Everything else | [hello@userig.app](mailto:hello@userig.app) — press, partnerships, privacy |
 | GitHub org | [Rig-local](https://github.com/Rig-local) |
-| Product repo | [Rig-local/rig](https://github.com/Rig-local/rig) |
-| Legal | Rich Harrington Ltd |
 
-We would rather a quiet Mac app that actually boots your stack than another dashboard that pretends to.
+We would rather a quiet app that actually boots your stack than another dashboard that pretends to.
 
 ---
 
 ## About the app
 
-Install Rig on a Mac. Open a folder. Rig finds scripts, Procfiles, Docker Compose, Valet, PHP — and starts the right things on the right ports. It keeps a board of what is running, whose port it is, and what the logs say.
+Open a folder. Rig finds scripts, Procfiles, Docker Compose, Valet, PHP — and starts the right things on the right ports. It keeps a board of what is running, whose port it is, and what the logs say.
 
-**Local first.** Unsigned, you still get projects, start/stop, logs, ports, lanes, env, sessions, the MCP hub, local databases, LAN share, and Sparkle updates. Cloud is optional: sign in when you want another Mac, a team seat, Continuity, Mesh, or a Live Link.
+**Local first.** Without an account you still get projects, start/stop, logs, ports, lanes, env, the MCP hub, local databases, and updates. Cloud is optional: sign in when you want another machine, a team seat, Continuity, Mesh, or a Live Link.
 
-**Agents get a hub, not a pasted terminal.** MCP runs inside the Mac app. The agent lists projects, reads logs, starts and stops — with a token and a scope you set in Connections.
+**Agents get a hub, not a pasted terminal.** MCP runs inside the app. The agent lists projects, reads logs, starts and stops — with a token and a scope you set in Connections.
 
-Two release tracks, independent of each other:
+Current builds are on the website, not an old GitHub Release. Mac updates arrive through Sparkle. Windows has its own beta track.
 
 | Track | What it is |
 |-------|------------|
-| **Mac** | Sparkle-signed DMG. Check for Updates in the app. |
-| **Cloud** | `api.userig.app` and the site. Version on `/changelog` and `/health`. |
+| **Mac** | Signed DMG for Apple Silicon and Intel. Check for Updates in the app. |
+| **Windows** | Public x64 beta. Same product idea, its own version. |
+| **iPhone** | UseRig — fleet, projects, and the Macs you have paired. |
+| **Cloud** | api.userig.app and the site. Version on [/changelog](https://userig.app/changelog) and `/health`. |
 
-**Download the Mac app**
-
-| Chip | Installer |
-|------|-----------|
-| Apple Silicon (M1–M4) | [Rig-1.0.0-beta.71-arm64.dmg](https://github.com/Rig-local/rig/releases/download/v1.0.0-beta.71/Rig-1.0.0-beta.71-arm64.dmg) |
-| Intel | [Rig-1.0.0-beta.71-x64.dmg](https://github.com/Rig-local/rig/releases/download/v1.0.0-beta.71/Rig-1.0.0-beta.71-x64.dmg) |
-
-Latest GitHub release: [Rig-local/rig/releases/latest](https://github.com/Rig-local/rig/releases/latest) · website: [userig.app/download](https://userig.app/download)
+**[Download Rig](https://userig.app/download)** · **[Changelog](https://userig.app/changelog)**
 
 ---
 
 ## What’s in the product
 
-### Mac app
+### Desktop app
 
-The thing you install. Menu bar, project board, command palette (⌘K), env lanes, git, managed Postgres/Redis, crash diagnose, local HTTPS, phone companion on the LAN.
+The thing you install. Menu bar, project board, command palette (⌘K), env lanes, git, managed Postgres/Redis, crash diagnose, local HTTPS.
 
 Guides: [Install](https://userig.app/docs/install) · [First 10 minutes](https://userig.app/docs/first-10-minutes) · [Ports and crashes](https://userig.app/docs/ports-crashes)
 
+### iPhone
+
+UseRig is the pocket companion: the fleet, projects, and Mesh only to Macs you paired. It is not a public VPN.
+
+[Rig for iPhone](https://userig.app/iphone)
+
 ### Cloud
 
-Sign in on the Mac. Devices register themselves. Catalog is names, git URLs, and which Mac owns a project — **never the source tree**. Account dashboard: [api.userig.app/account/dashboard](https://api.userig.app/account/dashboard)
+Sign in on the desktop. Devices register themselves. The catalog is names, git URLs, and which machine owns a project — **never the source tree**. Account dashboard: [api.userig.app/account/dashboard](https://api.userig.app/account/dashboard)
 
 Guides: [Cloud](https://userig.app/docs/c/cloud) · [What syncs](https://userig.app/docs/sync-what-syncs)
 
 ### Mesh
 
-Your Macs on a private network. Enroll, tags, rules (*Macs tagged X can reach Y on Z*), wake a sleeping Mac (needs a second machine on that LAN to relay), screen in. A team seat is **not** mesh access.
+Your machines on a private network. Enroll, tags, rules (*machines tagged X can reach Y on Z*), wake a sleeping Mac (needs a second machine on that LAN to relay), screen in. A team seat is **not** mesh access.
 
 [userig.app/mesh](https://userig.app/mesh) · [Mesh docs](https://userig.app/docs/mesh)
 
@@ -89,40 +92,42 @@ Your Macs on a private network. Enroll, tags, rules (*Macs tagged X can reach Y 
 
 | | Who it’s for |
 |---|---|
-| **MCP** | Cursor, Claude Code, Codex, Copilot, Zed’s neighbours that speak MCP. Hub in Connections, usually `http://127.0.0.1:47823/mcp`. |
+| **MCP** | Cursor, Claude Code, Codex, Copilot, and other editors that speak MCP. Hub in Connections, usually `http://127.0.0.1:47823/mcp`. |
 | **ACP** | Editors that speak Agent Client Protocol (Zed, JetBrains). Cloud service at [acp.userig.app](https://acp.userig.app). |
 
 [MCP](https://userig.app/docs/mcp) · [ACP](https://userig.app/docs/acp) · [ACP vs MCP](https://userig.app/docs/acp-vs-mcp)
 
 ### Live Links and LAN share
 
-QR on the office Wi‑Fi, or a branded `https://userig.app/live/{slug}` for a client. Opt-in, password optional, expires. Source stays on the Mac.
+QR on the office Wi‑Fi, or a branded `https://userig.app/live/{slug}` for a client. Opt-in, password optional, expires. Source stays on the machine.
 
 [Live Link](https://userig.app/docs/live-link)
 
 ### Continuity
 
-Encrypted backup of **Rig setup** (projects registry, prefs, MCP, ciphertext vaults) — not repos, not `.env` plaintext. Recovery key is shown once.
+Encrypted backup of **Rig setup** (projects registry, prefs, MCP, ciphertext vaults) — not repos, not `.env` plaintext. The recovery key is shown once.
 
 [Continuity](https://userig.app/docs/continuity-scheduled)
 
 ### Teams
 
-Invite by email. Members see shared catalog; they still need git for source. Owners manage roles (`member` / `viewer`).
+Invite by email. Members see the shared catalog; they still need git for source. Owners manage roles (`member` / `viewer`).
 
 [Team invites](https://userig.app/docs/team-invites)
 
 ### Gauge
 
-A sibling Mac app — sensors and fans, same visual language, not a screen inside Rig. Optional privileged helper for fan speed.
+A sibling Mac app — sensors and fans, same visual language, not a screen inside Rig.
+
+[Download Gauge](https://userig.app/download/gauge)
 
 ### Rig Mail
 
-We send transactional mail ourselves ([mail.userig.app](https://mail.userig.app)) over a Postmark-compatible API. Sign-up, reset, device linked, mesh, billing receipts. Marketing/waitlist stays on a separate broadcast provider. You do not log into Rig Mail as a customer.
+We send transactional mail ourselves ([mail.userig.app](https://mail.userig.app)). Sign-up, reset, device linked, mesh, billing receipts. You do not log into Rig Mail as a customer.
 
 ### Control Room
 
-Staff panel at [control.userig.app](https://control.userig.app). People, money, comms, product, system — tickets, flags, email templates, forum moderation. Not a customer product. Sign-in is Rig [SSO](https://github.com/Rig-local/rig/wiki/SSO) with 2FA required.
+Staff panel at [control.userig.app](https://control.userig.app). People, money, comms, product, system. Not a customer product. Sign-in is Rig SSO with 2FA required.
 
 ---
 
@@ -130,14 +135,14 @@ Staff panel at [control.userig.app](https://control.userig.app). People, money, 
 
 | Host | What it is |
 |------|------------|
-| [userig.app](https://userig.app) | Site, docs, changelog, Live Links, Sparkle appcast |
+| [userig.app](https://userig.app) | Site, docs, changelog, Live Links, Mac updates |
 | [api.userig.app](https://api.userig.app) | Auth, fleet, mesh, billing, account dashboard |
 | [community.userig.app](https://community.userig.app) | Forum — What’s shipping, What’s up next, Bugs, ideas |
-| [help.userig.app](https://help.userig.app) | Tickets (agent console). Customers open tickets from Support / the form below |
+| [help.userig.app](https://help.userig.app) | Tickets. Customers open them from Support or the form below |
 | [status.userig.app](https://status.userig.app) | Public status |
 | [acp.userig.app](https://acp.userig.app) | Cloud ACP |
 
-One Rig account. Community and helpdesk agents use **Continue with Rig**. Contributor map: [wiki — Surfaces](https://github.com/Rig-local/rig/wiki/Surfaces) · [SSO](https://github.com/Rig-local/rig/wiki/SSO) · [API](https://github.com/Rig-local/rig/wiki/API)
+One Rig account. Community uses **Continue with Rig**.
 
 ---
 
@@ -151,10 +156,10 @@ Work top to bottom. You will get a faster answer.
    If Cloud or mail is down, we already know.
 3. **Community** — [community.userig.app](https://community.userig.app)  
    What’s shipping, ideas, and peer help. Sign in with Rig.
-4. **A ticket** — email **[help@tickets.userig.app](mailto:help@tickets.userig.app)**, or use the [Support form](https://api.userig.app/support?source=github) / **Help** in the Mac app and account dashboard.  
-   Include: Mac version (`Rig → About`), Cloud version if relevant, what you did, what you expected, logs or a diagnostics bundle ([how](https://userig.app/docs/diagnostics-bundle)).
+4. **A ticket** — email **[help@tickets.userig.app](mailto:help@tickets.userig.app)**, or use the [Support form](https://api.userig.app/support?source=github) / **Help** in the app and account dashboard.  
+   Include: app version (`Rig → About`), Cloud version if relevant, what you did, what you expected, logs or a diagnostics bundle ([how](https://userig.app/docs/diagnostics-bundle)).
 
-That mailbox is technical support. Press, partnerships, and privacy stay at [hello@userig.app](mailto:hello@userig.app). There is no separate enterprise hotline.
+That mailbox is technical support. Press, partnerships, and privacy stay at [hello@userig.app](mailto:hello@userig.app).
 
 ---
 
@@ -163,40 +168,28 @@ That mailbox is technical support. Press, partnerships, and privacy stay at [hel
 1. Check [status](https://status.userig.app) and search [docs](https://userig.app/docs) / [Bugs on the forum](https://community.userig.app).
 2. **Preferred:** open a topic on the forum **Bugs** board (sign in with Rig). That is what we triage.
 3. **Email:** [help@tickets.userig.app](mailto:help@tickets.userig.app) — same inbox as the support form.
-4. **Also fine:** a GitHub issue on [`Rig-local/rig`](https://github.com/Rig-local/rig/issues).
 
 A useful report has:
 
-- Rig version (Mac *and* Cloud if both are involved)
-- macOS version and Apple Silicon vs Intel
+- Rig version (desktop *and* Cloud if both are involved)
+- macOS or Windows version, and Apple Silicon vs Intel where it matters
 - Steps to reproduce, or “happened once, here is the log”
 - Whether MCP / Mesh / Continuity / Live Link was in play
 - Redacted logs or a diagnostics bundle — not a screenshot of a black window
 
-Security findings: see [SECURITY.md](https://github.com/Rig-local/rig/blob/beta/docs/SECURITY.md) in the product repo, or email [hello@userig.app](mailto:hello@userig.app). Please do not file a public issue for an unreleased RCE.
+Security findings: email [hello@userig.app](mailto:hello@userig.app). Please do not file a public post for an unreleased vulnerability.
 
 Feature ideas: forum **ideas**, not a bug ticket.
-
----
-
-## Contributing / reading the code
-
-The monorepo is public. Default branch is **`beta`**.
-
-- [Handover](https://github.com/Rig-local/rig/wiki/Handover) — start here
-- [Architecture](https://github.com/Rig-local/rig/wiki/Architecture)
-- [Local setup](https://github.com/Rig-local/rig/wiki/Local-Setup)
-- Full wiki: [github.com/Rig-local/rig/wiki](https://github.com/Rig-local/rig/wiki)
-
-UK English in anything a human sees. Do not rename Control Room to “admin”. Do not put vendor mesh names in product copy.
 
 ---
 
 ## Changelog and releases
 
 - Product changelog: [userig.app/changelog](https://userig.app/changelog)
-- Mac GitHub Releases: [Rig-local/rig/releases](https://github.com/Rig-local/rig/releases)
+- Downloads: [userig.app/download](https://userig.app/download)
 - Forum **What’s shipping** / **What’s up next** track the live `releases.json`
+
+Public plugin (Cloud MCP and skills for coding agents): [Rig-local/rig-plugin](https://github.com/Rig-local/rig-plugin)
 
 ---
 
